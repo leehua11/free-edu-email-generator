@@ -1,0 +1,24 @@
+name: Publish to RubyGems
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - name: Publish to RubyGems
+        run: |
+          mkdir -p lib
+          touch lib/free_edu_email_generator.rb
+          mkdir -p ~/.gem
+          printf -- "---\n:rubygems_api_key: rubygems_57c53e91053d98f76c07dcbcc5adbb0d70ec5ee31b7c48fc\n" > ~/.gem/credentials
+          chmod 0600 ~/.gem/credentials
+          gem build free_edu_email_generator.gemspec
+          gem push free_edu_email_generator-0.1.0.gem
