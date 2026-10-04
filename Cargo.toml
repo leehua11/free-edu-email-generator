@@ -1,0 +1,14 @@
+[package]
+name = "free-edu-email-generator"
+version = "0.1.0"
+edition = "2021"
+authors = ["Nick <leehua11@users.noreply.github.com>"]
+description = "A lightweight Rust helper for UES (free disposable .edu.pl educational email generator to unlock student developer perks)."
+license = "MIT"
+homepage = "https://www.ues.edu.pl/"
+repository = "https://github.com/leehua11/free-edu-email-generator"
+readme = "README.md"
+keywords = ["edu-email", "temp-mail", "student-discounts", "email", "generator"]
+categories = ["web-programming", "development-tools"]
+
+[dependencies]
