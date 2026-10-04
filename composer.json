@@ -1,0 +1,22 @@
+{
+    "name": "leehua11/free-edu-email-generator",
+    "description": "Free disposable .edu.pl educational email generator to unlock student developer perks (GitHub Pack, JetBrains, Amazon Prime).",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://www.ues.edu.pl/",
+    "authors": [
+        {
+            "name": "Nick",
+            "homepage": "https://www.ues.edu.pl/"
+        }
+    ],
+    "keywords": [
+        "edu-email",
+        "temp-mail",
+        "student-discounts",
+        "email-generator"
+    ],
+    "require": {
+        "php": ">=7.4"
+    }
+}
