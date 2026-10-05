@@ -1,0 +1,6 @@
+site_name: UES Free Edu Email Generator Documentation
+site_url: https://www.ues.edu.pl/
+site_description: Documentation for UES free temporary educational email generator to unlock student developer perks.
+theme: readthedocs
+nav:
+  - Home: README.md
